@@ -1,38 +1,51 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Personal Webpage of Theo Dammaretz
+
+[![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT) 
+[![David](https://img.shields.io/david/Blightwidow/gatsby-resume)](./package.json) 
+[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier) 
+[![deploys by netlify](https://img.shields.io/badge/deploys%20by-netlify-00c7b7.svg)](https://www.netlify.com)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/bc1b59ab-a029-4391-afbd-ed5977a4bb5c/deploy-status)](https://app.netlify.com/sites/dammaretz/deploys)
+
+This is the code that my [personnal website](https://dammaretz.fr) is running on.
 
 ## Getting Started
 
-First, run the development server:
+1. `git clone` to get the repo
+2. install dependencies with `yarn`
+3. Launch development with `yarn start`
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+You can also deploy this website directly to netlify by clicking the button below.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Blightwidow/gatsby-blog)
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+### Prerequisites
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+What things you need to install the software and how to install them
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+- node
+- yarn
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Deployment
 
-## Learn More
+The setup is currently hosted and deployed through [Netlify](https://www.netlify.com/)
 
-To learn more about Next.js, take a look at the following resources:
+## Built With
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+* [React](https://reactjs.org/) - The web framework used
+* [Styled-components](https://www.styled-components.com/) - Atomic styling system
+* [Gatsby](https://www.gatsbyjs.org/) - Static HTML rendering of React content
+* [Typescript](https://www.typescriptlang.org/) - Javascript compiling language with strong typings
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Contributing
 
-## Deploy on Vercel
+Please read feel free to through me PR if you see necessary change!
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Authors
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+* **Theo Dammaretz** - *Initial work* - [Blightwidow](https://github.com/Bligthwidow)
+
+See also the list of [contributors](https://github.com/Blightwidow/gatsby-blog/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details

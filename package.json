@@ -4,11 +4,14 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && next export",
     "start": "next start",
+    "serve": "serve out",
     "lint": "next lint"
   },
   "dependencies": {
+    "@fontsource/metropolis": "4.5.3",
+    "@fontsource/spartan": "4.5.8",
     "@next/font": "13.1.2",
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
@@ -16,8 +19,11 @@
     "eslint": "8.32.0",
     "eslint-config-next": "13.1.2",
     "next": "13.1.2",
+    "prettier": "2.8.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "serve": "14.1.2",
+    "sharp": "0.31.3",
     "typescript": "4.9.4"
   }
 }

@@ -4,6 +4,7 @@ import Link from "next/link"
 
 import cover from "@/media/cover.jpg"
 import Head from "next/head"
+import { Spacer } from "@/ui/shared/Spacer"
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
             placeholder="blur"
             style={{ maxWidth: "100%", height: "auto" }}
           />
+          <Spacer units={2} />
         </div>
         <div className="four columns offset-by-one">
           <h1>ABOUT</h1>
@@ -29,6 +31,10 @@ export default function Home() {
             about it ever since.
           </p>
           <p>I am also very curious and will take any opportunity to gather new skills, like being a beer brewer, barista, soldier...</p>
+          <p>
+            You can have a glance at most of my work <Link href="/work">here</Link> or you can check my <Link href="/resume">Resume</Link>{" "}
+            directly.
+          </p>
           <p>
             You can get in touch with me <Link href="/contact-me">here</Link>.
           </p>

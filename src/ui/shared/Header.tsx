@@ -5,12 +5,12 @@ import { useRouter } from "next/router"
 export const Header: React.FunctionComponent = () => {
   const { asPath } = useRouter()
   const getLinks = React.useCallback(
-    (): { href: string; label: string }[] => [
-      { href: "/", label: "about" },
-      { href: "/resume", label: "resume" },
-      { href: "/work", label: "work" },
-      { href: "https://dammaretz.medium.com", label: "blog" },
-      { href: "/contact", label: "contact me" },
+    (): { href: string; label: string; folder: boolean }[] => [
+      { href: "/", label: "about", folder: false },
+      { href: "/resume", label: "resume", folder: false },
+      { href: "/work", label: "work", folder: true },
+      { href: "https://dammaretz.medium.com", label: "blog ↗", folder: false },
+      { href: "/contact", label: "contact me", folder: true },
     ],
     []
   )
@@ -24,7 +24,7 @@ export const Header: React.FunctionComponent = () => {
         <ul>
           {getLinks().map((link) => (
             <li key={link.href}>
-              <Link href={link.href} className={asPath === link.href ? undefined : "inactive"}>
+              <Link href={link.href} className={isActive(link.href, asPath, link.folder) ? undefined : "inactive"}>
                 {link.label}
               </Link>
             </li>
@@ -65,4 +65,12 @@ export const Header: React.FunctionComponent = () => {
       `}</style>
     </div>
   )
+}
+
+function isActive(href: string, currentPath: string, folder: boolean): boolean {
+  if (folder) {
+    return currentPath.startsWith(href)
+  }
+
+  return currentPath === href
 }

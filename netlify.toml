@@ -17,7 +17,6 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self';"
     Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
     X-DNS-Prefetch-Control = "on"
     X-XSS-Protection = "1; mode=block"

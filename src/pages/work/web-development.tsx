@@ -34,17 +34,21 @@ export default function Home() {
       <div className="row">
         <div className="one-half column">
           <ImageCard image={alan} title="Alan" href="https://alan.com" width={400} />
+          <Spacer units={2} />
         </div>
         <div className="one-half column">
           <ImageCard image={thefork} title="TheFork" href="https://thefork.fr" width={400} />
+          <Spacer units={2} />
         </div>
       </div>
       <div className="row">
         <div className="one-half column">
           <ImageCard image={lcdr} title="Le courrier de russie" width={400} />
+          <Spacer units={2} />
         </div>
         <div className="one-half column">
           <ImageCard image={dammaretz} title="This website" width={400} />
+          <Spacer units={2} />
         </div>
       </div>
     </>

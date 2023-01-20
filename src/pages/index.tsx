@@ -36,7 +36,7 @@ export default function Home() {
             directly.
           </p>
           <p>
-            You can get in touch with me <Link href="/contact-me">here</Link>.
+            You can get in touch with me <Link href="/contact">here</Link>.
           </p>
         </div>
       </div>

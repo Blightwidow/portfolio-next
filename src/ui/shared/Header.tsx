@@ -4,6 +4,7 @@ import { useRouter } from "next/router"
 
 export const Header: React.FunctionComponent = () => {
   const { asPath } = useRouter()
+  const [extendMenu, setExtendMenu] = React.useState(false)
   const getLinks = React.useCallback(
     (): { href: string; label: string; folder: boolean }[] => [
       { href: "/", label: "about", folder: false },
@@ -24,42 +25,79 @@ export const Header: React.FunctionComponent = () => {
         <ul>
           {getLinks().map((link) => (
             <li key={link.href}>
-              <Link href={link.href} className={isActive(link.href, asPath, link.folder) ? undefined : "inactive"}>
+              <Link
+                href={link.href}
+                className={isActive(link.href, asPath, link.folder) ? undefined : "inactive"}
+                onClick={() => setExtendMenu(false)}
+              >
                 {link.label}
               </Link>
             </li>
           ))}
         </ul>
+        <button onClick={() => setExtendMenu(!extendMenu)} aria-label="toggle menu">
+          ☰
+        </button>
       </nav>
       <style jsx>{`
         div {
-          padding: 4rem 0;
+          padding: 2rem 0;
         }
         nav {
           display: flex;
+          flex-direction: column-reverse;
           justify-content: space-between;
           text-transform: uppercase;
           font-family: var(--heading-font-family);
         }
         p {
           font-weight: 700;
-          font-size: 3.6rem;
+          font-size: 3rem;
           margin: 0;
         }
         ul {
           display: flex;
+          flex-direction: column;
+          overflow: hidden;
+          height: ${extendMenu ? "180px" : "0"};
+          transition: height 0.3s ease-in-out;
+          margin-bottom: 2rem;
         }
         li {
           display: flex;
           align-items: center;
           justify-content: center;
-          margin: 1.5rem;
+          margin: 0.8rem;
           font-size: 1.3rem;
           letter-spacing: -0.05rem;
         }
-        @media (min-width: 550px) {
+        button {
+          border: none;
+          color: rgb(var(--foreground-rgb));
+          font-size: 2rem;
+        }
+        @media (min-width: 900px) {
           div {
             padding: 8.5rem 0;
+          }
+          nav {
+            flex-direction: row;
+          }
+          ul {
+            flex-direction: row;
+            height: auto;
+            margin-bottom: 0;
+          }
+          button {
+            display: none;
+          }
+        }
+        @media (min-width: 1050px) {
+          p {
+            font-size: 3.6rem;
+          }
+          li {
+            margin: 1.5rem;
           }
         }
       `}</style>

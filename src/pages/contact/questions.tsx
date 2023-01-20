@@ -32,6 +32,7 @@ export default function Home() {
             <textarea name="message"></textarea>
           </div>
         </div>
+        <Spacer />
         <p>
           <button type="submit">Send</button>
         </p>

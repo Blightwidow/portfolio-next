@@ -11,13 +11,13 @@
   --primary-color-rgb: 99, 29, 200;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-  --foreground-rgb: 252, 252, 248;
-  --background-rgb: 34, 34, 34;
-  --primary-color-rgb: 189, 147, 249;
-  }
-}
+/*@media (prefers-color-scheme: dark) {*/
+/*  :root {*/
+/*  --foreground-rgb: 252, 252, 248;*/
+/*  --background-rgb: 34, 34, 34;*/
+/*  --primary-color-rgb: 189, 147, 249;*/
+/*  }*/
+/*}*/
 
 /* Base
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

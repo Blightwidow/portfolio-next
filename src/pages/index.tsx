@@ -32,11 +32,11 @@ export default function Home() {
           </p>
           <p>I am also very curious and will take any opportunity to gather new skills, like being a beer brewer, barista, soldier...</p>
           <p>
-            You can have a glance at most of my work <Link href="/work">here</Link> or you can check my <Link href="/resume">Resume</Link>{" "}
+            You can have a glance at most of <Link href="/work">my work</Link> or you can check my <Link href="/resume">Resume</Link>{" "}
             directly.
           </p>
           <p>
-            You can get in touch with me <Link href="/contact">here</Link>.
+            You can get in touch with me <Link href="/contact">from my contact page</Link>.
           </p>
         </div>
       </div>

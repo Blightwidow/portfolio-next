@@ -29,21 +29,45 @@ export default function Home() {
       <Spacer units={3} />
       <div className="row">
         <div className="one-half column">
-          <ImageCard image={astronaut} title="Myself as an astronaut" width={400} />
+          <ImageCard
+            image={astronaut}
+            title="Myself as an astronaut"
+            width={400}
+            alt="an ai generated image of myself as an astronaut"
+            sizes="(max-width: 549px) 100vw, 50vw"
+          />
           <Spacer units={2} />
         </div>
         <div className="one-half column">
-          <ImageCard image={color} title="My new profile pricture" width={400} />
+          <ImageCard
+            image={color}
+            title="My new profile pricture"
+            width={400}
+            alt="an ai generated image of myself with a colorful background"
+            sizes="(max-width: 549px) 100vw, 50vw"
+          />
           <Spacer units={2} />
         </div>
       </div>
       <div className="row">
         <div className="one-half column">
-          <ImageCard image={potter} title="Myself as Harry Potter" width={400} />
+          <ImageCard
+            image={potter}
+            title="Myself as Harry Potter"
+            width={400}
+            alt="an ai generated image of myself as harry potter"
+            sizes="(max-width: 549px) 100vw, 50vw"
+          />
           <Spacer units={2} />
         </div>
         <div className="one-half column">
-          <ImageCard image={painting} title="A colorful painting of myself" width={400} />
+          <ImageCard
+            image={painting}
+            title="A colorful painting of myself"
+            width={400}
+            alt="an ai generated image of myself with a colorful background"
+            sizes="(max-width: 549px) 100vw, 50vw"
+          />
           <Spacer units={2} />
         </div>
       </div>

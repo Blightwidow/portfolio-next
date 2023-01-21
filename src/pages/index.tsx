@@ -20,7 +20,7 @@ export default function Home() {
             priority
             placeholder="blur"
             style={{ maxWidth: "100%", height: "auto" }}
-            sizes="(max-width: 769px) 361px, 629px"
+            sizes="(max-width: 549px) 100vw, 50vw"
           />
           <Spacer units={2} />
         </div>

@@ -33,21 +33,47 @@ export default function Home() {
       <Spacer units={3} />
       <div className="row">
         <div className="one-half column">
-          <ImageCard image={alan} title="Alan" href="https://alan.com" width={400} />
+          <ImageCard
+            image={alan}
+            title="Alan"
+            href="https://alan.com"
+            width={400}
+            alt="a screenshot of alan.com"
+            sizes="(max-width: 549px) 100vw, 50vw"
+          />
           <Spacer units={2} />
         </div>
         <div className="one-half column">
-          <ImageCard image={thefork} title="TheFork" href="https://thefork.fr" width={400} />
+          <ImageCard
+            image={thefork}
+            title="TheFork"
+            href="https://thefork.fr"
+            width={400}
+            alt="a screenshot of thefork.com"
+            sizes="(max-width: 549px) 100vw, 50vw"
+          />
           <Spacer units={2} />
         </div>
       </div>
       <div className="row">
         <div className="one-half column">
-          <ImageCard image={lcdr} title="Le courrier de russie" width={400} />
+          <ImageCard
+            image={lcdr}
+            title="Le courrier de russie"
+            width={400}
+            alt="a screenshot of lecourrierderussie.fr"
+            sizes="(max-width: 549px) 100vw, 50vw"
+          />
           <Spacer units={2} />
         </div>
         <div className="one-half column">
-          <ImageCard image={dammaretz} title="This website" width={400} />
+          <ImageCard
+            image={dammaretz}
+            title="This website"
+            width={400}
+            alt="a screenshot of dammaretz.fr"
+            sizes="(max-width: 549px) 100vw, 50vw"
+          />
           <Spacer units={2} />
         </div>
       </div>

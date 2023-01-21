@@ -14,11 +14,25 @@ export default function Home() {
       <div className="row">
         <div className="four columns">
           <div>
-            <ImageCard image={webdev} title="Web Development" href="/work/web-development" width={341}/>
+            <ImageCard
+              image={webdev}
+              title="Web Development"
+              href="/work/web-development"
+              width={341}
+              alt="a photo of a computer"
+              sizes="(max-width: 549px) 100vw, 33vw"
+            />
           </div>
         </div>
         <div className="four columns">
-          <ImageCard image={ai} title="Artificial Intelligence" href="/work/ai"  width={341}/>
+          <ImageCard
+            image={ai}
+            title="Artificial Intelligence"
+            href="/work/ai"
+            width={341}
+            alt="a 3d render of an android robot"
+            sizes="(max-width: 549px) 100vw, 33vw"
+          />
         </div>
       </div>
     </>

@@ -1,4 +1,4 @@
-import { StaticImageData } from "next/image"
+import { ImageProps, StaticImageData } from "next/image"
 import Link from "next/link"
 import * as React from "react"
 import ExportedImage from "next-image-export-optimizer"
@@ -8,9 +8,9 @@ type ImageCardProps = {
   width?: number
   title: string
   href?: string
-}
+} & Omit<ImageProps, "src">
 
-export function ImageCard({ href, image, title, width }: ImageCardProps) {
+export function ImageCard({ href, image, title, width, ...props }: ImageCardProps) {
   const Component = Boolean(href)
     ? (props: any) => <Link href={href} {...props} rel={href?.startsWith("http") ? "nofollow" : undefined} />
     : "span"
@@ -19,11 +19,10 @@ export function ImageCard({ href, image, title, width }: ImageCardProps) {
     <div className="wrapper">
       <ExportedImage
         src={image}
-        alt="image of a computer screen with code on it"
         priority
         placeholder="blur"
         style={{ maxWidth: " 100%", height: "auto", border: "1px solid rgba(var(--primary-color-rgb), 0.1)" }}
-        sizes={width ? `(max-width: 769px) ${Math.round(width / 2)}px, ${width}px` : undefined}
+        {...props}
       />
       <Component
         style={{

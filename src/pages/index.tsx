@@ -27,7 +27,7 @@ export default function Home() {
         <div className="four columns offset-by-one">
           <h1>ABOUT</h1>
           <p>
-            My name is Theo Dammaretz, and for the most part I am a Frontend Engineer. I&apos;ve started in 2016 and have been pasionate
+            My name is Theo Dammaretz, and for the most part I am a Frontend Engineer. I&apos;ve started in 2016 and have been passionate
             about it ever since.
           </p>
           <p>I am also very curious and will take any opportunity to gather new skills, like being a beer brewer, barista, soldier...</p>

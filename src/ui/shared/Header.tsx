@@ -41,7 +41,7 @@ export const Header: React.FunctionComponent = () => {
       </nav>
       <style jsx>{`
         div {
-          padding: 2rem 0;
+          padding: 2rem;
         }
         nav {
           display: flex;
@@ -75,6 +75,11 @@ export const Header: React.FunctionComponent = () => {
           border: none;
           color: rgb(var(--foreground-rgb));
           font-size: 2rem;
+        }
+        @media (min-width: 400px) {
+          div {
+            padding: 2rem 0;
+          }
         }
         @media (min-width: 900px) {
           div {

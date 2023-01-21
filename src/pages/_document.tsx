@@ -1,4 +1,5 @@
 import { Html, Head, Main, NextScript } from "next/document"
+import Script from "next/script"
 
 export default function Document() {
   return (
@@ -45,6 +46,11 @@ export default function Document() {
         <Main />
         <NextScript />
       </body>
+      <Script
+        src="https://static.cloudflareinsights.com/beacon.min.js"
+        data-cf-beacon='{"token": "e3b1e7bd83a14709b104e8c213387f3d"}'
+        strategy="lazyOnload"
+      />
     </Html>
   )
 }

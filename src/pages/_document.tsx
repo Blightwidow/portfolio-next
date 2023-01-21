@@ -41,16 +41,17 @@ export default function Document() {
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" type="image/xicon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
+        <Script
+          defer
+          src="https://static.cloudflareinsights.com/beacon.min.js"
+          data-cf-beacon='{"token": "e3b1e7bd83a14709b104e8c213387f3d"}'
+          strategy="afterInteractive"
+        />
       </Head>
       <body>
         <Main />
         <NextScript />
       </body>
-      <Script
-        src="https://static.cloudflareinsights.com/beacon.min.js"
-        data-cf-beacon='{"token": "e3b1e7bd83a14709b104e8c213387f3d"}'
-        strategy="lazyOnload"
-      />
     </Html>
   )
 }

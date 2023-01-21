@@ -1,6 +1,6 @@
 import * as React from "react"
-import Image from "next/image"
 import Link from "next/link"
+import ExportedImage from "next-image-export-optimizer"
 
 import cover from "@/media/cover.jpg"
 import Head from "next/head"
@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
       <div className="row">
         <div className="seven columns">
-          <Image
+          <ExportedImage
             src={cover}
             alt="profile picture of Theo"
             priority

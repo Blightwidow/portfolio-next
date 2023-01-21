@@ -1,6 +1,7 @@
-import Image, { StaticImageData } from "next/image"
+import { StaticImageData } from "next/image"
 import Link from "next/link"
 import * as React from "react"
+import ExportedImage from "next-image-export-optimizer";
 
 type ImageCardProps = {
   image: StaticImageData
@@ -16,7 +17,7 @@ export function ImageCard({ href, image, title, width }: ImageCardProps) {
 
   return (
     <div className="wrapper">
-      <Image
+      <ExportedImage
         src={image}
         alt="image of a computer screen with code on it"
         priority

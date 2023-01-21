@@ -3,6 +3,9 @@ import * as React from "react"
 import { Spacer } from "@/ui/shared/Spacer"
 
 export default function Home() {
+  const [isSubmitting, setIsSubmitting] = React.useState(false)
+  const [isSuccess, setIsSuccess] = React.useState(false)
+
   return (
     <>
       <Head>
@@ -14,10 +17,35 @@ export default function Home() {
         <b>Do not</b> send any enquiry regarding hiring or consulting.
       </p>
       <Spacer units={5} />
-      <form name="contact" method="POST" data-netlify="true">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        onSubmit={(event) => {
+          event.preventDefault()
+          setIsSubmitting(true)
+          setIsSuccess(false)
+
+          fetch("/", {
+            method: "POST",
+            headers: { "Content-Type": "application/x-www-form-urlencoded" },
+            body: new URLSearchParams({
+              // @ts-ignore
+              email: event.target.elements.email.value,
+              // @ts-ignore
+              message: event.target.elements.email.value,
+            }).toString(),
+          })
+            .then(() => {
+              setIsSuccess(true)
+              setIsSubmitting(true)
+            })
+            .catch((error) => console.error(error))
+        }}
+      >
         <div className="row">
           <div className="four columns">
-            <label>Your Email:</label>
+            <label htmlFor="email">Your Email:</label>
           </div>
           <div className="six columns offset-by-one">
             <input type="email" name="email" />
@@ -26,16 +54,20 @@ export default function Home() {
         <Spacer />
         <div className="row">
           <div className="four columns">
-            <label>Message:</label>
+            <label htmlFor="message">Message:</label>
           </div>
           <div className="six columns offset-by-one">
-            <textarea name="message"></textarea>
+            <textarea name="message" />
           </div>
         </div>
         <Spacer />
         <p>
-          <button type="submit">Send</button>
+          <button type="submit" disabled={isSubmitting}>
+            Send
+          </button>
         </p>
+        <Spacer />
+        {isSuccess && <p>Your message was submitted successfully</p>}
         <style jsx>{`
           input,
           textarea {

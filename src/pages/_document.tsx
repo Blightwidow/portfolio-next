@@ -4,18 +4,23 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <script type="application/ld+json" data-test="jsonld">
-          {JSON.stringify(
-            {
-              "@context": "http://schema.org",
-              "@type": "WebSite",
-              name: "Theo Dammaretz",
-              url: "https://dammaretz.fr",
-            },
-            null,
-            2
-          )}
-        </script>
+        <script
+          type="application/ld+json"
+          data-test="jsonld"
+          key="jsonld"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(
+              {
+                "@context": "http://schema.org",
+                "@type": "WebSite",
+                name: "Theo Dammaretz",
+                url: "https://dammaretz.fr",
+              },
+              null,
+              2
+            ),
+          }}
+        />
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="Theo Dammaretz online business card and resume homemade website and portfolio" />
         <meta name="keywords" content="resume, CV, Theo, Dammaretz, software, engineer, international, developper, developer" />

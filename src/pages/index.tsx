@@ -2,7 +2,7 @@ import * as React from "react"
 import Link from "next/link"
 import ExportedImage from "next-image-export-optimizer"
 
-import cover from "@/media/cover.jpg"
+import cover3 from "@/media/cover.png"
 import Head from "next/head"
 import { Spacer } from "@/ui/shared/Spacer"
 
@@ -15,7 +15,7 @@ export default function Home() {
       <div className="row">
         <div className="seven columns">
           <ExportedImage
-            src={cover}
+            src={cover3}
             alt="profile picture of Theo"
             priority
             width={629}

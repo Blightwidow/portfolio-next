@@ -21,6 +21,7 @@ export default function Home() {
         name="contact"
         method="POST"
         data-netlify="true"
+        data-netlify-honeypot="hidden-field"
         onSubmit={(event) => {
           event.preventDefault()
           setIsSubmitting(true)
@@ -34,15 +35,21 @@ export default function Home() {
               email: event.target.elements.email.value,
               // @ts-ignore
               message: event.target.elements.email.value,
+              formName: "contact",
             }).toString(),
           })
-            .then(() => {
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error(response.statusText)
+              }
+
               setIsSuccess(true)
               setIsSubmitting(true)
             })
             .catch((error) => console.error(error))
         }}
       >
+        <input name="hidden-field" style={{ display: "none" }} />
         <div className="row">
           <div className="four columns">
             <label htmlFor="email">Your Email:</label>

@@ -18,9 +18,9 @@ export default function Home() {
             src={cover3}
             alt="profile picture of Theo"
             priority
-            width={629}
             placeholder="blur"
             style={{ maxWidth: "100%", height: "auto" }}
+            sizes="(max-width: 769px) 361px, 629px"
           />
           <Spacer units={2} />
         </div>

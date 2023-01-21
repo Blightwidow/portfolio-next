@@ -18,7 +18,7 @@
 # next.js
 /.next/
 /out/
-/media/nextImageExportOptimizer/
+/src/media/nextImageExportOptimizer/
 
 # production
 /build

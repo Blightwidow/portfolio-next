@@ -1,7 +1,6 @@
 # Personal Webpage of Theo Dammaretz
 
 [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](https://opensource.org/licenses/MIT) 
-[![David](https://img.shields.io/david/Blightwidow/gatsby-resume)](./package.json) 
 [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier) 
 [![deploys by netlify](https://img.shields.io/badge/deploys%20by-netlify-00c7b7.svg)](https://www.netlify.com)
 [![Netlify Status](https://api.netlify.com/api/v1/badges/bc1b59ab-a029-4391-afbd-ed5977a4bb5c/deploy-status)](https://app.netlify.com/sites/dammaretz/deploys)

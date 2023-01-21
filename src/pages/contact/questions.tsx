@@ -34,8 +34,8 @@ export default function Home() {
               // @ts-ignore
               email: event.target.elements.email.value,
               // @ts-ignore
-              message: event.target.elements.email.value,
-              formName: "contact",
+              message: event.target.elements.message.value,
+              ["form-name"]: "contact",
             }).toString(),
           })
             .then((response) => {

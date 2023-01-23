@@ -10,7 +10,7 @@ export const Header: React.FunctionComponent = () => {
       { href: "/", label: "about", folder: false },
       { href: "/resume", label: "resume", folder: false },
       { href: "/work", label: "work", folder: true },
-      { href: "https://dammaretz.medium.com", label: "blog ↗", folder: false },
+      { href: "/blog", label: "blog", folder: true },
       { href: "/contact", label: "contact me", folder: true },
     ],
     []

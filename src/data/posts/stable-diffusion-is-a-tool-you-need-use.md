@@ -11,7 +11,7 @@ text-to-image generator. While it was very impressive, it was closed source and 
 use-cases and media coverage of it was still limited. In August 2022 though, everything changed when Stability AI
 released its own diffusion based image generator: Stable Diffusion.
 
-![Stabolity AI Logo](https://images.squarespace-cdn.com/content/v1/6213c340453c3f502425776e/330e6487-af90-43c8-a255-63b3440d0e34/StabilityAi_Logo_White-19.png?format=500w)
+![Stabolity AI Logo](https://miro.medium.com/v2/resize:fit:1400/format:webp/1*xRlGfUPWW-4xZGDnexOQSQ.png)
 
 Unlike its predecessors, Stable Diffusion was __Open Source, Free and public under a pretty permissive license__,
 allowing anyone with the necessary computing power to generate a vast number of images for free. It also meant that

@@ -16,7 +16,6 @@ export default function Home() {
         <title>Web Dev - Work - Theo Dammaretz</title>
       </Head>
       <Link href="/work">← Go Back</Link>
-      <Spacer units={3} />
       <h1>Web Development</h1>
       <p>
         I have been building website for more than 6 years. These projects have range from small portfolios, like the one you are on right

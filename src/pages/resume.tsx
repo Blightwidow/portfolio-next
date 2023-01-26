@@ -11,7 +11,6 @@ export default function Resume() {
       </Head>
       <h1>RESUME</h1>
       <p>I am a Senior Software and Frontend Engineer with more than 6 years of experience.</p>
-      <Spacer units={5} />
       <h2>Skills</h2>
       <div className="row">
         <div className="three columns">
@@ -29,7 +28,6 @@ export default function Resume() {
           <p>Conference, Articles, Community animation</p>
         </div>
       </div>
-      <Spacer units={3} />
       <h2>Experience</h2>
       <div className="spine">
         <div className="row">
@@ -82,7 +80,6 @@ export default function Resume() {
           </div>
         </div>
       </div>
-      <Spacer units={3} />
       <h2>Languages</h2>
       <div className="spine">
         <div className="row">
@@ -106,7 +103,6 @@ export default function Resume() {
           </div>
         </div>
       </div>
-      <Spacer units={3} />
       <h2>Hobbies</h2>
       <div className="row">
         <div className="three columns">

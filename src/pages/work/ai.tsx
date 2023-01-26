@@ -16,7 +16,6 @@ export default function Home() {
         <title>AI - Work - Theo Dammaretz</title>
       </Head>
       <Link href="/work">← Go Back</Link>
-      <Spacer units={3} />
       <h1>Artificial Intelligence</h1>
       <p>I am also a big fan of AI and the achievement that developers and humanity at large achieved through them.</p>
       <p>

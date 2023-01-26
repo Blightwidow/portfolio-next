@@ -13,9 +13,8 @@ export default function PostPage({ post }: { post: Post }) {
         <title>{`${post.title} - Blog - Theo Dammaretz`}</title>
       </Head>
       <Link href="/blog">← Go Back</Link>
-      <Spacer units={3} />
-      <time>{post.date}</time>
       <Spacer units={1} />
+      <time>{post.date}</time>
       <article dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
     </>
   )

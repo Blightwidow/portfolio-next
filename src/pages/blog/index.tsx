@@ -20,7 +20,6 @@ export default function BlogIndex({ posts }: { posts: Post[] }) {
           </h3>
           {Boolean(post.subtitle) && <p>{post.subtitle}</p>}
           <time>{post.date}</time>
-          <Spacer units={3} />
         </div>
       ))}
       <style jsx>{`

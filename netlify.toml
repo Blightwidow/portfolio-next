@@ -14,6 +14,16 @@
   to = "/:splat"
   status = 301
 
+[[redirects]]
+  from = "/about"
+  to = "/resume"
+  status = 301
+
+[[redirects]]
+  from = "/projects/*"
+  to = "/work"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]

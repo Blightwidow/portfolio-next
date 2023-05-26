@@ -27,7 +27,8 @@ export default function Home() {
       </p>
       <p>
         That does not prevent me from also checking out new things and trying things. Below are some examples that I can share of projects I
-        had a big contribution to.
+        had a big contribution to. You should also check my <a href="https://github.com/Blightwidow/">GitHub</a> and{" "}
+        <a href="https://www.linkedin.com/in/theodammaretz/">Linkedin</a> profiles.
       </p>
       <Spacer units={3} />
       <div className="row">
@@ -79,3 +80,4 @@ export default function Home() {
     </>
   )
 }
+

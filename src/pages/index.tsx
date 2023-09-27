@@ -36,6 +36,12 @@ export default function Home() {
             directly.
           </p>
           <p>
+            <a href="https://github.com/Blightwidow/">Github</a>
+          </p>
+          <p>
+            <a href="https://www.linkedin.com/in/theodammaretz/">Linkedin</a>
+          </p>
+          <p>
             You can get in touch with me <Link href="/contact">from my contact page</Link>.
           </p>
         </div>
@@ -43,3 +49,4 @@ export default function Home() {
     </>
   )
 }
+

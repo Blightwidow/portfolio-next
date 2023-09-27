@@ -33,16 +33,6 @@ export default function Home() {
             sizes="(max-width: 549px) 100vw, 33vw"
           />
         </div>
-        <div className="four columns">
-          <ImageCard
-            image={data}
-            title="Open Data"
-            href="https://data.dammaretz.fr"
-            width={341}
-            alt="a 3d render of an android robot"
-            sizes="(max-width: 549px) 100vw, 33vw"
-          />
-        </div>
       </div>
     </>
   )

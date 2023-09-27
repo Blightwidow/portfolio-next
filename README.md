@@ -15,7 +15,7 @@ This is the code that my [personnal website](https://dammaretz.fr) is running on
 
 You can also deploy this website directly to netlify by clicking the button below.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Blightwidow/gatsby-blog)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/Blightwidow/profolio-next)
 
 ### Prerequisites
 
@@ -41,8 +41,6 @@ Please read feel free to through me PR if you see necessary change!
 ## Authors
 
 * **Theo Dammaretz** - *Initial work* - [Blightwidow](https://github.com/Bligthwidow)
-
-See also the list of [contributors](https://github.com/Blightwidow/gatsby-blog/contributors) who participated in this project.
 
 ## License
 

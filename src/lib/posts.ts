@@ -27,13 +27,15 @@ export type RawPost = {
 export function getAllPostIds() {
   const fileNames = fs.readdirSync(POST_DIR)
 
-  return fileNames.map((fileName) => {
-    return {
-      params: {
-        id: fileName.replace(/\.md$/, ""),
-      },
-    }
-  })
+  return fileNames
+    .filter((fileName) => fileName.match(/\.md$/))
+    .map((fileName) => {
+      return {
+        params: {
+          id: fileName.replace(/\.md$/, ""),
+        },
+      }
+    })
 }
 
 export async function getAllPostByDate(order: "asc" | "desc"): Promise<Post[]> {
@@ -85,4 +87,3 @@ async function parsePost(id: string): Promise<RawPost> {
     contentHtml,
   }
 }
-

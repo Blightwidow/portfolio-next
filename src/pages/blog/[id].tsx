@@ -16,6 +16,12 @@ export default function PostPage({ post }: { post: Post }) {
       <Spacer units={1} />
       <time>{post.date}</time>
       <article dangerouslySetInnerHTML={{ __html: post.contentHtml }} />
+      <Spacer units={2} />
+      <hr />
+      <em>
+        About the Author: Theo is a software engineer with a knack for writing down his thoughts on a variety of topics that pique his
+        interest.
+      </em>
     </>
   )
 }

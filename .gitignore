@@ -24,8 +24,8 @@
 /build
 /public/sw.js
 /public/workbox*
-/media/nextImageExportOptimizer
-/media/*.json
+src/media/nextImageExportOptimizer
+src/media/*.json
 
 # misc
 .DS_Store

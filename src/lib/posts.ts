@@ -39,7 +39,12 @@ export function getAllPostIds() {
 export async function getAllPostByDate(order: "asc" | "desc"): Promise<Post[]> {
   const fileNames = fs.readdirSync(POST_DIR)
 
-  const posts = await Promise.all(fileNames.map((fileName) => fileName.replace(/\.md$/, "")).map(parsePost))
+  const posts = await Promise.all(
+    fileNames
+      .filter((fileName) => fileName.match(/\.md$/))
+      .map((fileName) => fileName.replace(/\.md$/, ""))
+      .map(parsePost)
+  )
 
   return posts
     .sort((a, b) => {
@@ -80,3 +85,4 @@ async function parsePost(id: string): Promise<RawPost> {
     contentHtml,
   }
 }
+

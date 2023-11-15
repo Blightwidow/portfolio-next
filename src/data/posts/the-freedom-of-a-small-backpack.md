@@ -10,6 +10,8 @@ Recently, I’ve been flooded with queries about how I manage my travel, so I th
 
 **I am a firm believer in travelling without a suitcase.** I restrict myself to a backpack that's carry-on sized, or even smaller. After some trial and error, I've come to find that a 35L backpack hits the sweet spot. It allows me to travel for an unlimited period within a particular season, regardless of whether I'm on a train or a plane.
 
+![Photo by Josiah Weiss on Unsplash](https://images.unsplash.com/photo-1509762774605-f07235a08f1f?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)
+
 You may be wondering, why such a small backpack? Isn't it restrictive? To answer that: yes, it is, but in a beneficial way. It prompts you to focus on necessities, leaving behind the non-essentials that tend to weigh you down. When you confine your belongings to fit inside a 35L backpack, you're forced to really consider what you need. This minimalist approach brings a new degree of simplicity and clarity to your travels.
 
 Moreover, a small backpack isn't just about physical minimalism. It also brings with it a sense of flexibility and freedom that a suitcase simply can't provide. Imagine landing in a new city and being able to start your exploration right away, rather than having to rush to a taxi because of bulky luggage. A small backpack means you can explore at your own pace, use public transportation, or even walk to your accommodation. Stairs, cobblestone streets, sandy beaches, bustling markets – nothing holds you back when you travel light. Plus, you don't have to worry about airport check-ins or lost luggage, saving you precious time, especially on shorter trips.

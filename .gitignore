@@ -25,6 +25,7 @@
 /public/sw.js
 /public/sw.js.map
 /public/workbox*
+/public/rss.xml
 src/media/nextImageExportOptimizer
 src/media/*.json
 

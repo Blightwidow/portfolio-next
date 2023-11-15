@@ -11,23 +11,6 @@ export default function Resume() {
       </Head>
       <h1>RESUME</h1>
       <p>I am a Senior Software and Frontend Engineer with more than 6 years of experience.</p>
-      <h2>Skills</h2>
-      <div className="row">
-        <div className="three columns">
-          <p>Frontend development, Software engineering</p>
-        </div>
-        <div className="three columns">
-          <p>React, Node, Jest, Cypress</p>
-        </div>
-        <div className="three columns">
-          <p>Progressive Web Apps, Service Workers</p>
-        </div>
-      </div>
-      <div className="row">
-        <div className="three columns">
-          <p>Conference, Articles, Community animation</p>
-        </div>
-      </div>
       <h2>Experience</h2>
       <div className="spine">
         <div className="row">
@@ -103,6 +86,23 @@ export default function Resume() {
           </div>
         </div>
       </div>
+      <h2>Skills</h2>
+      <div className="row">
+        <div className="three columns">
+          <p>Frontend development, Software engineering</p>
+        </div>
+        <div className="three columns">
+          <p>React, Node, Jest, Cypress</p>
+        </div>
+        <div className="three columns">
+          <p>Progressive Web Apps, Service Workers</p>
+        </div>
+      </div>
+      <div className="row">
+        <div className="three columns">
+          <p>Conference, Articles, Community animation</p>
+        </div>
+      </div>
       <h2>Hobbies</h2>
       <div className="row">
         <div className="three columns">
@@ -142,3 +142,4 @@ export default function Resume() {
     </>
   )
 }
+

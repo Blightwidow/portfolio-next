@@ -4,6 +4,7 @@ import Link from "next/link"
 import Head from "next/head"
 import { Spacer } from "@/ui/shared/Spacer"
 import { getAllPostByDate, Post } from "@/lib/posts"
+import { generateRssFeed } from "@/lib/rss"
 
 export default function BlogIndex({ posts }: { posts: Post[] }) {
   return (
@@ -39,6 +40,7 @@ export default function BlogIndex({ posts }: { posts: Post[] }) {
 
 export async function getStaticProps() {
   const posts = await getAllPostByDate("desc")
+  await generateRssFeed(posts);
 
   return {
     props: {

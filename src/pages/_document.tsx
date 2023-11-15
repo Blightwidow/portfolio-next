@@ -41,6 +41,7 @@ export default function Document() {
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" type="image/xicon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/favicon.ico" />
+        <link rel="alternate" type="application/rss+xml" title="Blog feed" href="/rss.xml" />
         <Script
           defer
           src="https://static.cloudflareinsights.com/beacon.min.js"

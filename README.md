@@ -41,7 +41,7 @@ Please read feel free to through me PR if you see necessary change!
 ## Authors
 
 * **Theo Dammaretz** - *Initial work* - [Blightwidow](https://github.com/Bligthwidow)
-* **Kevin Lovato** - *Proofreading* - [@Kevin-Lovato](https://github.com/Kevin-Lovato)
+* **Kevin Lovato** - *Proofreading* - [@alprema](https://github.com/alprema)
 
 ## License
 

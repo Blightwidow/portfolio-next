@@ -81,7 +81,7 @@ export default function Resume() {
               <br />
               <span>ru-RU</span> Russian
               <br />
-              <span>ja-JP</span> Japanes
+              <span>ja-JP</span> Japanese
             </p>
           </div>
         </div>

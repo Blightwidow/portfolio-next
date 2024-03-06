@@ -13,7 +13,6 @@ export default function BlogIndex({ posts }: { posts: Post[] }) {
         <title>Blog - Theo Dammaretz</title>
       </Head>
       <h1>Blog</h1>
-      <Spacer units={4} />
       {posts.map((post) => (
         <div key={post.id}>
           <h3>
@@ -21,17 +20,12 @@ export default function BlogIndex({ posts }: { posts: Post[] }) {
           </h3>
           {Boolean(post.subtitle) && <p>{post.subtitle}</p>}
           <time>{post.date}</time>
+          <Spacer units={2} />
         </div>
       ))}
       <style jsx>{`
         time {
           opacity: 0.6;
-        }
-        h3 {
-          margin-bottom: 1rem;
-        }
-        p {
-          margin-bottom: 0rem;
         }
       `}</style>
     </>
@@ -40,7 +34,7 @@ export default function BlogIndex({ posts }: { posts: Post[] }) {
 
 export async function getStaticProps() {
   const posts = await getAllPostByDate("desc")
-  await generateRssFeed(posts);
+  await generateRssFeed(posts)
 
   return {
     props: {

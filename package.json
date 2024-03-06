@@ -11,7 +11,6 @@
   },
   "dependencies": {
     "@fontsource/metropolis": "4.5.3",
-    "@fontsource/spartan": "4.5.8",
     "@next/font": "13.1.2",
     "@types/node": "18.11.18",
     "@types/react": "18.0.27",
@@ -21,7 +20,6 @@
     "eslint-config-next": "13.1.2",
     "gray-matter": "^4.0.3",
     "next": "13.1.2",
-    "next-image-export-optimizer": "^1.1.2",
     "next-pwa": "^5.6.0",
     "prettier": "2.8.3",
     "react": "18.2.0",

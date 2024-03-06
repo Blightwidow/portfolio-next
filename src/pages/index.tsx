@@ -1,52 +1,79 @@
 import * as React from "react"
 import Link from "next/link"
-import ExportedImage from "next-image-export-optimizer"
 
-import cover3 from "@/media/cover.png"
 import Head from "next/head"
+import { getAllPostByDate, Post } from "@/lib/posts"
 import { Spacer } from "@/ui/shared/Spacer"
 
-export default function Home() {
+const PROJECTS = [
+  { name: "Alan", link: "https://alan.com", description: "Landing pages for the digital French health insurer" },
+  { name: "TheFork", link: "https://thefork.com", description: "A restaurant booking and discovery app" },
+]
+
+export default function Home({ posts }: { posts: Post[] }) {
   return (
     <>
       <Head>
         <title>Theo Dammaretz</title>
       </Head>
-      <div className="row">
-        <div className="seven columns">
-          <ExportedImage
-            src={cover3}
-            alt="profile picture of Theo"
-            priority
-            placeholder="blur"
-            style={{ maxWidth: "100%", height: "auto" }}
-            sizes="(max-width: 549px) 100vw, 50vw"
-          />
-          <Spacer units={2} />
-        </div>
-        <div className="four columns offset-by-one">
-          <h1>ABOUT</h1>
-          <p>
-            My name is Theo Dammaretz, and for the most part I am a Frontend Engineer. I&apos;ve started in 2016 and have been passionate
-            about it ever since.
-          </p>
-          <p>I am also very curious and will take any opportunity to gather new skills, like being a beer brewer, barista, soldier...</p>
-          <p>
-            You can have a glance at most of <Link href="/work">my work</Link> or you can check my <Link href="/resume">Resume</Link>{" "}
-            directly.
-          </p>
-          <p>
-            <a href="https://github.com/Blightwidow/">Github</a>
-          </p>
-          <p>
-            <a href="https://www.linkedin.com/in/theodammaretz/">Linkedin</a>
-          </p>
-          <p>
-            You can get in touch with me <Link href="/contact">from my contact page</Link>.
-          </p>
-        </div>
+      <p>
+        Hey there, I&apos;m Theo Dammaretz, and for the most part I am a Frontend Engineer. I&apos;ve started in 2016 and have been
+        passionate about it ever since. I also have a knack for writing down random thoughts in my blog.
+      </p>
+      <Spacer units={1} />
+      <h2>Projects</h2>
+      <div className="projects">
+        {PROJECTS.map((project) => (
+          <div key={project.name}>
+            <a href={project.link} rel="noopener noreferrer">
+              {project.name}
+            </a>
+            <p>{project.description}</p>
+          </div>
+        ))}
       </div>
+      <Spacer units={1} />
+      <h2>Blog</h2>
+      <ul>
+        {posts.map((post) => (
+          <li key={post.id}>
+            <Link href={`/blog/${post.id}`}>{post.title}</Link>
+            <time>{post.date}</time>
+          </li>
+        ))}
+      </ul>
+      <style jsx>{`
+        li {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+        }
+        .projects {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: 1fr;
+          grid-column-gap: .5rem;
+          grid-row-gap: 1rem;
+        }
+        @media (min-width: 550px) {
+          .projects {
+            grid-template-columns: repeat(3, 1fr);
+            grid-column-gap: 1rem;
+            grid-row-gap: 1rem;
+          }
+        }
+      `}</style>
     </>
   )
 }
 
+export async function getStaticProps() {
+  const posts = await getAllPostByDate("desc")
+
+  return {
+    props: {
+      posts,
+    },
+  }
+}

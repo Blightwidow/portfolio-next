@@ -6,7 +6,7 @@ function addPage(page) {
 
   return `  <url>
     <loc>${`https://dammaretz.fr${path}`}</loc>
-    <changefreq>daily</changefreq>
+    <changefreq>MONTHLY</changefreq>
   </url>`
 }
 
@@ -18,3 +18,4 @@ async function generateSitemap() {
 }
 
 generateSitemap()
+

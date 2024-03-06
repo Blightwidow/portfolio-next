@@ -1292,13 +1292,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@fontsource/spartan@npm:4.5.8":
-  version: 4.5.8
-  resolution: "@fontsource/spartan@npm:4.5.8"
-  checksum: 301c550122c03c0d409458a6911907e1264e5dbd6379f985c6ee525c7f360de6b5ef774d17640fd8b5d8ab7b2e36ba388bcd2d9e61b201bc16f6236ed282b72e
-  languageName: node
-  linkType: hard
-
 "@gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -2555,15 +2548,6 @@ __metadata:
   version: 3.0.0
   resolution: "cli-boxes@npm:3.0.0"
   checksum: 637d84419d293a9eac40a1c8c96a2859e7d98b24a1a317788e13c8f441be052fc899480c6acab3acc82eaf1bccda6b7542d7cdcf5c9c3cc39227175dc098d5b2
-  languageName: node
-  linkType: hard
-
-"cli-progress@npm:^3.10.0":
-  version: 3.11.2
-  resolution: "cli-progress@npm:3.11.2"
-  dependencies:
-    string-width: ^4.2.3
-  checksum: 147d26b80ceaa24d72f0354d1b58b7f3567b928bf5943be879de31cf16b0a4f1d059984e2e35a664d7d27ae3e7fafd69fd94b35f462c8879caf96d7f31eac442
   languageName: node
   linkType: hard
 
@@ -5557,22 +5541,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next-image-export-optimizer@npm:^1.1.2":
-  version: 1.1.2
-  resolution: "next-image-export-optimizer@npm:1.1.2"
-  dependencies:
-    cli-progress: ^3.10.0
-    sharp: ^0.31.0
-    typescript: ^4.7.2
-  peerDependencies:
-    next: ^13.0.0
-    react: ^18.0.0-0
-  bin:
-    next-image-export-optimizer: src/optimizeImages.js
-  checksum: e04e556b8104c557fab0950b7fa5cf45aa65abbf21e9b316667da7d8cb3cf70235fe34d8d2ba0b9c4a5c57be42d184618d2d5eee5e3398e4af03c2b9a6da2690
-  languageName: node
-  linkType: hard
-
 "next-pwa@npm:^5.6.0":
   version: 5.6.0
   resolution: "next-pwa@npm:5.6.0"
@@ -6052,7 +6020,6 @@ __metadata:
   resolution: "portfolio-next@workspace:."
   dependencies:
     "@fontsource/metropolis": 4.5.3
-    "@fontsource/spartan": 4.5.8
     "@next/font": 13.1.2
     "@types/node": 18.11.18
     "@types/react": 18.0.27
@@ -6063,7 +6030,6 @@ __metadata:
     eslint-config-next: 13.1.2
     gray-matter: ^4.0.3
     next: 13.1.2
-    next-image-export-optimizer: ^1.1.2
     next-pwa: ^5.6.0
     prettier: 2.8.3
     react: 18.2.0
@@ -6729,7 +6695,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sharp@npm:^0.31.0, sharp@npm:^0.31.3":
+"sharp@npm:^0.31.3":
   version: 0.31.3
   resolution: "sharp@npm:0.31.3"
   dependencies:
@@ -7382,7 +7348,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:4.9.4, typescript@npm:^4.7.2":
+"typescript@npm:4.9.4":
   version: 4.9.4
   resolution: "typescript@npm:4.9.4"
   bin:
@@ -7392,7 +7358,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@4.9.4#~builtin<compat/typescript>, typescript@patch:typescript@^4.7.2#~builtin<compat/typescript>":
+"typescript@patch:typescript@4.9.4#~builtin<compat/typescript>":
   version: 4.9.4
   resolution: "typescript@patch:typescript@npm%3A4.9.4#~builtin<compat/typescript>::version=4.9.4&hash=ad5954"
   bin:

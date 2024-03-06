@@ -6,8 +6,6 @@ export default function FourOhFour() {
     <>
       <Spacer units={5} />
       <h1>404 - Page Not Found</h1>
-      <Spacer />
-      <Link href="/">Go back home</Link>
     </>
   )
 }

@@ -3,110 +3,51 @@ import Link from "next/link"
 import { useRouter } from "next/router"
 
 export const Header: React.FunctionComponent = () => {
-  const { asPath } = useRouter()
-  const [extendMenu, setExtendMenu] = React.useState(false)
+  const { asPath, ...rest } = useRouter()
   const getLinks = React.useCallback(
-    (): { href: string; label: string; folder: boolean }[] => [
-      { href: "/", label: "about", folder: false },
-      { href: "/resume", label: "resume", folder: false },
-      { href: "/work", label: "work", folder: true },
-      { href: "/blog", label: "blog", folder: true },
-      { href: "/contact", label: "contact me", folder: true },
-    ],
+    (): { href: string; label: string; folder: boolean }[] => [{ href: "/blog", label: "blog", folder: true }],
     []
   )
+  const parent = asPath.split("/").slice(0, -1).join("/") || "/"
 
   return (
-    <div id="header" role="banner" className="container">
+    <header id="header" role="banner">
       <nav role="navigation">
-        <p>
-          <Link href="/">Theo Dammaretz</Link>
-        </p>
+        {asPath === "/" ? <h1>theo dammaretz</h1> : <Link href={parent}>← back</Link>}
         <ul>
           {getLinks().map((link) => (
             <li key={link.href}>
-              <Link
-                href={link.href}
-                className={isActive(link.href, asPath, link.folder) ? undefined : "inactive"}
-                onClick={() => setExtendMenu(false)}
-              >
+              <Link href={link.href} style={{ textDecoration: "none" }}>
                 {link.label}
               </Link>
             </li>
           ))}
         </ul>
-        <button onClick={() => setExtendMenu(!extendMenu)} aria-label="toggle menu">
-          ☰
-        </button>
       </nav>
       <style jsx>{`
-        div {
-          padding: 2rem;
-        }
         nav {
           display: flex;
-          flex-direction: column-reverse;
+          flex-direction: row;
           justify-content: space-between;
-          text-transform: uppercase;
-          font-family: var(--heading-font-family);
-        }
-        p {
-          font-weight: 700;
-          font-size: 3rem;
-          margin: 0;
+          align-items: center;
         }
         ul {
           display: flex;
-          flex-direction: column;
-          overflow: hidden;
-          height: ${extendMenu ? "180px" : "0"};
-          transition: height 0.3s ease-in-out;
-          margin-bottom: 2rem;
+          flex-direction: row;
+          list-style: none;
+          opacity: 0.7;
+          margin: 0;
         }
         li {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          margin: 0.8rem;
-          font-size: 1.3rem;
-          letter-spacing: -0.05rem;
+          margin: 0;
         }
-        button {
-          border: none;
-          color: rgb(var(--foreground-rgb));
-          font-size: 2rem;
-        }
-        @media (min-width: 400px) {
-          div {
-            padding: 2rem 0;
-          }
-        }
-        @media (min-width: 900px) {
-          div {
-            padding: 8.5rem 0;
-          }
-          nav {
-            flex-direction: row;
-          }
-          ul {
-            flex-direction: row;
-            height: auto;
-            margin-bottom: 0;
-          }
-          button {
-            display: none;
-          }
-        }
-        @media (min-width: 1050px) {
-          p {
-            font-size: 3.6rem;
-          }
-          li {
-            margin: 1.5rem;
-          }
+        h1 {
+          font-size: 1rem;
+          font-weight: normal;
+          margin: 0;
         }
       `}</style>
-    </div>
+    </header>
   )
 }
 

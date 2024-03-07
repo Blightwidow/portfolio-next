@@ -6,8 +6,13 @@ import { getAllPostByDate, Post } from "@/lib/posts"
 import { Spacer } from "@/ui/shared/Spacer"
 
 const PROJECTS = [
-  { name: "Alan", link: "https://alan.com", description: "Landing pages for the digital French health insurer" },
-  { name: "TheFork", link: "https://thefork.com", description: "A restaurant booking and discovery app" },
+  { name: "Alan", link: "https://alan.com", description: "Landing pages for the digital French health insurer - Senior Frontend Engineer" },
+  { name: "TheFork", link: "https://thefork.com", description: "A restaurant booking and discovery app - Senior Frontend Engineer" },
+  {
+    name: "Oxide",
+    link: "https://github.com/Blightwidow/oxide-chess-bot",
+    description: "A buggy and pretty bad chess engine under development written in Rust",
+  },
 ]
 
 export default function Home({ posts }: { posts: Post[] }) {
@@ -35,12 +40,15 @@ export default function Home({ posts }: { posts: Post[] }) {
       <Spacer units={1} />
       <h2>Blog</h2>
       <ul>
-        {posts.map((post) => (
+        {posts.slice(-3).map((post) => (
           <li key={post.id}>
             <Link href={`/blog/${post.id}`}>{post.title}</Link>
             <time>{post.date}</time>
           </li>
         ))}
+        <li>
+          <Link href="/blog">All posts →</Link>
+        </li>
       </ul>
       <style jsx>{`
         li {
@@ -53,7 +61,7 @@ export default function Home({ posts }: { posts: Post[] }) {
           display: grid;
           grid-template-columns: repeat(2, 1fr);
           grid-template-rows: 1fr;
-          grid-column-gap: .5rem;
+          grid-column-gap: 0.5rem;
           grid-row-gap: 1rem;
         }
         @media (min-width: 550px) {

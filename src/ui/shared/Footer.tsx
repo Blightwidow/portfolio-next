@@ -35,7 +35,7 @@ export const Footer: React.FunctionComponent = () => {
       </div>
       <style jsx>{`
         footer {
-          padding: 30px 0;
+          margin-top: 4rem;
         }
         .wrapper {
           display: flex;
@@ -59,7 +59,7 @@ export const Footer: React.FunctionComponent = () => {
         }
         @media (min-width: 550px) {
           footer {
-            padding: 60px 0;
+            margin-top: 6rem;
           }
         }
       `}</style>

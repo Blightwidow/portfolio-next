@@ -6,8 +6,8 @@ import { getAllPostByDate, Post } from "@/lib/posts"
 import { Spacer } from "@/ui/shared/Spacer"
 
 const PROJECTS = [
-  { name: "Alan", link: "https://alan.com", description: "Landing pages for the digital French health insurer - Senior Frontend Engineer" },
-  { name: "TheFork", link: "https://thefork.com", description: "A restaurant booking and discovery app - Senior Frontend Engineer" },
+  { name: "Alan", link: "https://alan.com", description: "Landing pages for the digital French health insurer — Senior Frontend Engineer" },
+  { name: "TheFork", link: "https://thefork.com", description: "A restaurant booking and discovery app — Senior Frontend Engineer" },
   {
     name: "Oxide",
     link: "https://github.com/Blightwidow/oxide-chess-bot",

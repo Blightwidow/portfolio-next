@@ -40,7 +40,7 @@ export default function Home({ posts }: { posts: Post[] }) {
       <Spacer units={1} />
       <h2>Blog</h2>
       <ul>
-        {posts.slice(-3).map((post) => (
+        {posts.slice(0, 3).map((post) => (
           <li key={post.id}>
             <Link href={`/blog/${post.id}`}>{post.title}</Link>
             <time>{post.date}</time>

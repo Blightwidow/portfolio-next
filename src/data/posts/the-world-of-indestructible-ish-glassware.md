@@ -1,15 +1,15 @@
 ---
-title: The Fascinating World of Indestructible-ish Glassware
+title: The world of indestructible-ish glassware
 subtitle: Long lasting glassware already exists
 date: 10/07/2024
 ---
-# The Fascinating World of Indestructible-ish Glassware
+# The world of indestructible-ish glassware
 
 I've lost count of how many glasses I've broken over the years. From accidentally knocking them off the table to fumbling while washing dishes. Recently, this got me wondering: are there any truly durable glassware options out there?
 
 As it turns out, there's a fascinating history behind "unbreakable" glasses, and some modern options that might just save me from my clumsy ways, and reduce there impact on our planet.
 
-## The Superfest Story
+## The Superfest story
 
 Back in the 1980s, East Germany faced a glass shortage. Their solution? A product called Superfest. This wasn't your ordinary glassware – it was made using a special process that resulted in nearly indestructible drinking vessels.
 
@@ -17,7 +17,7 @@ Superfest glasses underwent a chemical treatment called ion exchange. Without ge
 
 Interestingly, while Superfest was seen as a potential export star, it never really took off internationally. Some speculate that foreign companies weren't keen on the idea of glassware that rarely needed replacing – after all, broken glasses mean more sales.
 
-## Modern Ion Exchange Glassware
+## Modern Ion Exchange glassware
 
 While Superfest itself is no more, the technology behind it lives on. Today, ion exchange is primarily used to create durable smartphone screens as it's the basis behind the famous Gorilla Glass. However, there are still a few companies making glassware using similar techniques:
 
